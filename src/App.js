@@ -206,7 +206,20 @@ class App extends Component {
                 </div>
                 <div className="date">{this.createMonthDays()}</div>
               </div>
-              <div className="footer" />
+              <div className="footer">
+                <div className="row">
+                  <div className="round blue" />
+                  <div className="text">
+                    תאריכי יציאה וחזרה אפשריים
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="round pink" />
+                  <div className="text">
+                    אפשרית טיסת צ'רטר בתאריכים אלו
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         ) : (
