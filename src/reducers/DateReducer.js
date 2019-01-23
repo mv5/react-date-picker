@@ -55,9 +55,7 @@ const initialState = {
   selectedMonthIndex: now.getMonth(),
   month: {
     value: now.getMonth(),
-    label: `${months[now.getMonth() % 12].name} ${
-      now.getMonth() < 12 ? now.getFullYear() : now.getFullYear() + 1
-    }`
+    label: `${months[now.getMonth()].name} ${now.getFullYear()}`
   },
   currentYear: now.getFullYear(),
   firstOfMonth: now.getDay(),

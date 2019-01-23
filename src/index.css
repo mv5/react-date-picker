@@ -12,11 +12,6 @@ button {
   cursor: pointer;
 }
 
-select{
-  background: transparent;
-  border: none;
-}
-
 @font-face{
   font-family: 'almoni';
   font-style: normal;
