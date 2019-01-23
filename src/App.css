@@ -1,32 +1,129 @@
 .App {
+  position: relative;
+  margin: auto;
+  transform: translateY(50%);
+  direction: rtl;
   text-align: center;
+  width: 365px;
+  height: 465px;
+  border: 1px solid black;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.date-picker {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  top: 10px;
+  bottom: 10px;
+  padding: 10px 15px;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  font-family: "almoni bold";
+  font-size: 19px;
+}
+
+.close {
+  align-self: flex-end;
+  font-size: 20px;
+  color: #afafb0;
+}
+
+.btn {
+  border: 1px solid lightgray;
+  width: 32px;
+  height: 32px;
+  color: #636365;
+  font-size: 20px;
+}
+
+.month-list {
+  width: 180px;
+  height: 32px;
+  outline: none;
+  border: none;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.3);
+  padding: 0 5px;
+}
+
+.month {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin: 10px 0 20px 0;
+}
+
+.month-option__menu {
+  transition: all 0.12s linear;
+}
+
+.month-option__control {
+  border: none !important;
+  outline: none !important;
+  min-height: 0;
+}
+
+.month-option__option {
+  min-height: 0;
+  text-align: right;
+  padding: 5px 0;
+  font-family: "almoni bold";
+}
+
+.month-option__indicator-separator {
+  display: none;
+}
+
+.month-option__option:hover {
+  background-color: #dde9ea;
+  color: #5191b2;
+}
+
+.date {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.day-container {
+  padding: 0 20px;
+}
+
+.day-num {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 32px;
+  height: 32px;
+  margin-left: 7px;
+  border-radius: 50%;
+  font-family: "Open sans";
+  font-size: 12px;
+  margin-bottom: 5px;
+  transition: all 0.12s linear;
 }
 
-.App-link {
-  color: #61dafb;
+.day-num.available:hover {
+  color: white !important;
+  background-color: #51847d !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.day {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.day-title {
+  width: 32px;
+  margin-left: 7px;
+  font-family: "almoni";
+  font-size: 14px;
+}
+
+.disabled {
+  cursor: default;
+  opacity: 0.5;
 }

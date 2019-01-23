@@ -1,14 +1,36 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+button {
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+select{
+  background: transparent;
+  border: none;
+}
+
+@font-face{
+  font-family: 'almoni';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/almoni-dl-aaa-400.eot') format('embedded-opentype'),
+      url('./fonts/almoni-dl-aaa-400.ttf') formt('truetype'),
+      url('./fonts/almoni-dl-aaa-400.woff') format('woff')
+}
+
+@font-face{
+  font-family: 'almoni bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/almoni-dl-aaa-700.eot') format('embedded-opentype'),
+      url('./fonts/almoni-dl-aaa-700.ttf') formt('truetype'),
+      url('./fonts/almoni-dl-aaa-700.woff') format('woff')
 }
